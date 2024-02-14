@@ -4,7 +4,7 @@ import ast
 import secrets
 from google.auth import default
 CREDENTIAL, PROJECT_ID = default()
-keys = ast.literal_eval(os.environ.get("docs_creds", ""))
+keys = ast.literal_eval(os.environ.get("credentials", ""))
 
 if keys:
     username = keys['username']
